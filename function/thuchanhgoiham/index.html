@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function processConfirm(answer) {
+        let result = "";
+        if (answer) {
+            alert("Chao mung ban den voi tro choi")
+        } else {
+            alert("Hen gap lai ban lan sau")
+        }
+        return result;
+    }
+
+    let confirmAnswer = confirm("Ban co muon choi game khong?");
+    let theAns = processConfirm(confirmAnswer);
+    alert(theAns)
+</script>
+</body>
+</html>

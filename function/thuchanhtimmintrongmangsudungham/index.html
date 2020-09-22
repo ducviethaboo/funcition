@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1 = [3, 5, 1, 8, -3, 7, 8];
+    let arr2 = [7, 12, 6, 9, 20, 56, 89];
+    let arr3 = [];
+    let arr4 = [0, 0, 0, 0, 0, 0];
+
+    function getMinarr1(arr) {
+        let min = arr[0];
+        let index = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+                index = i;
+            }
+        }
+        return index;
+    }
+
+    let result = getMinarr1(arr1);
+    document.write(result + ",");
+
+    function getMaxarr2(arr) {
+        let max = arr[0];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+                ;
+            }
+        }
+        return max;
+    }
+
+    let ketQua = getMaxarr2(arr2);
+    document.write(ketQua)
+
+    function ckeckArr3(arr) {
+        if (arr.length == 0) return -1
+    }
+
+    let ckeck = ckeckArr3(arr3);
+    document.write(ckeck)
+
+    function ckeckArr4(arr) {
+        let min = arr[0];
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr [i];
+            }
+        }
+        return min;
+    }
+
+    let tete = ckeckArr4(arr4);
+    document.write(tete)
+</script>
+</body>
+</html>

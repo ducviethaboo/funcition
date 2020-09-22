@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="getage" type="date">
+<button onclick="getAge()" type="button">Tinh</button>
+<p id="result"></p>
+
+<script>
+    function getAge () {
+    let str = document.getElementById("getage").value;
+    let newStr = str.slice(0,4);
+    document.getElementById("result").innerHTML = 2020 - newStr;
+    }
+</script>
+</body>
+</html>

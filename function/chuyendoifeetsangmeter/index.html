@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Meter:</p>
+<input oninput="getMeter()" id="meter" type="number">
+<p>Feet:<span id="result1"></span></p>
+<hr/>
+<p>Foot:</p>
+<input oninput="getFoot()" id="foot" type="number">
+<p>Metter:<span id="result2"></span></p>
+<script>
+    function footToMeter(foot) {
+        reSult1 = 3.279 * foot;
+        return reSult1;
+    }
+
+    function meterToFoot(meter) {
+        reSult2 = 0.305 * meter;
+        return reSult2;
+    }
+
+    function getMeter() {
+        let inMeter = document.getElementById("meter").value;
+        let ketQua1 = footToMeter(inMeter);
+        document.getElementById("result1").innerHTML = ketQua1;
+    }
+
+    function getFoot() {
+        let inFoot = document.getElementById("foot").value;
+        let ketQua2 = meterToFoot(inFoot);
+        document.getElementById("result2").innerHTML = ketQua2;
+    }
+</script>
+</body>
+</html>

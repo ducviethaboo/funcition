@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function ckeckArray(arr,character) {
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if(character == arr[i]) {
+                count +=1;
+            }
+        }
+        if(count) {
+            return count;
+        } else {
+            return -1;
+        }
+    }
+</script>
+</body>
+</html>

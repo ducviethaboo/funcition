@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function getAcreage(num1) {
+     return acre = Math.PI * num1 * num1;
+    }
+
+
+    function getPerimeter(num2) {
+    return peri = 2 * Math.PI * num2;
+    }
+
+    let numbers = +prompt("Nhap vao ban kinh hinh tron");
+    let ketQua1 = getAcreage(numbers);
+    let ketQua2 = getPerimeter(numbers);
+    document.write("Dien tich hinh tron : " + ketQua1 + "<br>");
+    document.write("Chu vi hinh tron : " + ketQua2);
+</script>
+</body>
+</html>

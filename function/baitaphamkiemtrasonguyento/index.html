@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // function isPrime(num) {
+    //     let result = "";
+    //     if (num > 10000) return "Moi nhap so nho hon"
+    //         if (num === 2) return num +  "la so nguyen to";
+    //         if (num < 2) return num +  "khong phai so nguyen to"
+    //         for (let i = 2; i < num; i++) {
+    //             if (num % i === 0) {
+    //                 return num +  "khong phai la so nguyen to";
+    //             }
+    //         }
+    //     return num + "day la so nguyen to"
+    // }
+    //
+    // let number = +prompt("Nhap vao so")
+    // let ketQua = isPrime(number);
+    // alert(ketQua);
+
+
+
+
+
+
+
+    function isPrime(n) {
+        for (let i = 2; i < n; i++) {
+            if (n % i === 0) {
+                return false
+            }
+        }
+        return true;
+    }
+
+
+
+    function displayPrime(n) {
+        let primeNumber = "";
+        for (let i = 2; i < n; i++) {
+            if (isPrime(i)) {
+                primeNumber += i + ",";
+            }
+        }
+        return primeNumber;
+    }
+    let x = displayPrime(10000);
+    document.write(x)
+</script>
+</body>
+</html>
